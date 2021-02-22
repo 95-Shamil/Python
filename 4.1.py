@@ -1,0 +1,12 @@
+def sal():
+    try:
+        time = float(input('Выработка в часах '))
+        salary = int(input('Ставка '))
+        bonus = int(input('Премия '))
+        res = time * salary + bonus
+        print(f'Заработная плата {res}')
+    except ValueError:
+        return print('Не цифра ')
+
+
+sal()
